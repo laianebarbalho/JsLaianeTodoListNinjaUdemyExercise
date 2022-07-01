@@ -46,3 +46,11 @@ search.addEventListener('keyup', e => {
   filterTodos(term);
 });
 
+//search input submit event to prevent default
+
+search.addEventListener('keypress', e => {
+  if(e.key === 'Enter'){
+    e.preventDefault();
+  };
+});
+
