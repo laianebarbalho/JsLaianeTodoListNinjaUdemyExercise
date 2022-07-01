@@ -16,7 +16,7 @@ const generateTemplate = todo => {
 // adding todos
 addForm.addEventListener('submit', e => {
   e.preventDefault();
-  const todo = addForm.add.value.trim();
+  const todo = addForm.add.value.trim().toLowerCase();
   if(todo.length) {
     generateTemplate(todo);
     addForm.reset();
